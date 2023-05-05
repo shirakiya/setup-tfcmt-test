@@ -3,10 +3,10 @@ name: setup-tfcmt test
 on: push
 
 jobs:
-  action-test-linux:
+  setup-tfcmt-test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/setup-tfcmt@v1
+      - uses: shirakiya/setup-tfcmt@v1
       - name: Check tfcmt command
         run: |
           which tfcmt
